@@ -183,6 +183,7 @@ body{
 
 .m-icon{
   font-family:'Material Symbols Rounded' ;
+  
   font-weight: normal;
   font-style: normal;
   font-size: 2.4rem;
@@ -192,6 +193,7 @@ body{
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
+  /* left to right direction  */
   font-feature-settings: "liga";
   -webkit-font-feature-settings:"liga";
   -webkit-font-smoothing:antialiased;
