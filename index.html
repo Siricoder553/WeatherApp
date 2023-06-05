@@ -44,9 +44,11 @@
             </a>
             <div class="search-view" data-search-view>
                 <div class="search-wrapper">
+                   
                     <input type="search" name="search" placeholder="Search city..."autocomplete="off" class="search-field" data-search-field>
+                    <!-- span is an inline element and the class m-icon is attached to the rounding symbol web browser  -->
                     <span class="m-icon">search</span>
-                    
+                    <!-- the below is to get a button like element to go back in the search -->
                     <button class="icon-btn leading-icon has-state" aria-label="close search"data-search-toggler >
                         <span class="m-icon">arrow_back</span>
                     </button>
@@ -58,13 +60,28 @@
                             <span class="m-icon">location_on</span>
                             <div>
                                 <p class="item-title">London</p>
-                            </div>
-                            <p class="label-2 item-subtitle">State of London, GB</p>
+                                <p class="label-2 item-subtitle">State of London, GB</p>
 
+                            </div>
+                            <a href="#" class="item-link has-state" data-search-toggler></a>
+                           
                             
                         </li>
+
                     </ul>
                 </div>
+                <div class="header-actions">
+
+                    <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+                        <span class="m-icon icon ">search</span>
+                    </button>
+                    <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
+                        <span class="m-icon">my_location</span>
+                        <span class="span">Current Location</span>
+                    </a>
+                </div>
+
+
             </div>
             
         </div>

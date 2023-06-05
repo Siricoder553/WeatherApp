@@ -200,9 +200,10 @@ body{
   height: lem;
   width: lem;
   overflow: hidden;
+  
+
 
 }
-
 
 
 
@@ -212,6 +213,9 @@ body{
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+.container{
+  
+}
 
 
 
