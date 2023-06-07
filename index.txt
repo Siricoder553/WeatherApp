@@ -110,3 +110,17 @@ Friday
 
 
 #---------- FOOTER ----------#
+
+ heading : Weather App
+ Powered By <a href="https://openweathermap.org/api"></a>
+ title="Free OpenWeather Api"
+
+ alt= OpenWeather
+
+
+
+ #---------- Error ----------#
+
+ heading: 404
+ Page not found!
+ Go Home
