@@ -1008,7 +1008,7 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
   .slider-list::before{
     display: none;
   }
-  .slide-list::after{
+  .slider-list::after{
     min-width: 12px;
   }
 
