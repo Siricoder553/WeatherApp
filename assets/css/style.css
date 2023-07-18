@@ -735,7 +735,7 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
 \*-----------------------------------*/
 
 .slider-container {
-  overflow: auto;
+  overflow-x: auto;
   margin-inline: -16px;
 
 }
@@ -900,7 +900,7 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
   }
 
   .title-1{
-    --title-1:2.4rem
+    --title-1:2.4rem;
   }
 
   .section > .title-2 {
@@ -949,7 +949,7 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
   /* Main */
 
   main{
-    height: calc(100vh -96px);
+    height: calc(100vh - 96px);
     height: calc(100svh - 96px);
 
   }

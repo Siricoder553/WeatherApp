@@ -36,25 +36,20 @@ export const monthNames = [
 ];
 /**
  * 
- * @param {number} dateUnix  Unix daye in seconds
+ * @param {number} dateUnix  Unix date in seconds
  * @param {number} timezone  Timezone shift from UTC in seconds
  * @returns {string}Date String. formate: "Sunday 10,Jan " 
  */
 
 
-export const getDate = function (dateUnix, timezone) {
+export const getDate = function(dateUnix, timezone) {
 
-    const date = new Date ((dateUnix + timezone)*1000);
+    const date = new Date((dateUnix + timezone)*1000);
     const weekDayName = weekDayNames[date.getUTCDay()];
-    const monthName = monthNames[date.getUTMonth()];
+    const monthName = monthNames[date.getUTCMonth()];
 
 
-    return '${weekDayName}  ${date.getUTCDate()}, ${monthName}';
-
-
-
-
-
+    return `${weekDayName}  ${date.getUTCDate()}, ${monthName}`;
 }
 
 
@@ -72,7 +67,7 @@ export const getTime = function(timeUnix, timezone){
     const period = hours >= 12 ? "PM" : "AM";
 
 
-    return '${hours % 12 || 12}:${minutes} ${period}';
+    return `${hours % 12 || 12}:${minutes} ${period}`;
 }
 
 /**
@@ -88,7 +83,7 @@ export const getHours = function(timeUnix, timezone){
     const period = hours >= 12 ? "PM" : "AM";
 
 
-    return '${hours % 12 || 12} ${period}';
+    return `${hours % 12 || 12} ${period}`;
 }
 
 /**
@@ -121,7 +116,7 @@ export const mps_to_kmh = mps => {
     },
     5: {
         level: "Very Poor",
-        message: "Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution."
+        message: "Health warnings of emergency conditions.The entire population is more likely to be affected."
     }
  }
 
