@@ -475,8 +475,7 @@ export const updateWeather = function (lat, lon) {
             }
             loading.style.display = "none";
             container.style.overflowY = "overlay";
-            container.classList.add6
-            ("fade-in");
+            container.classList.add("fade-in");
 
 
 
